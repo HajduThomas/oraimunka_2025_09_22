@@ -10,12 +10,12 @@ function Flip(){
 }
 function Piros()
 {
-    return <div className={styles.piros}></div>
+    return <div className={styles.piros}>Piros</div>
 }
 
 function Fekete()
 {
-    return <div className={styles.fekete}></div>
+    return <div className={styles.fekete}>Fekete</div>
 }
 
 function Flip2(){
