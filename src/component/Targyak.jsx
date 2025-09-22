@@ -4,7 +4,7 @@ function Targyak(){
     return(
         <>
             <ul>
-                {tomb.map((elem) => <li>elem</li>)}
+                {tomb.map((elem, idx) => <li key={idx}>{elem}</li>)}
             </ul>
         </>
     )
