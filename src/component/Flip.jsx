@@ -4,27 +4,27 @@ function Flip(){
 
     return(
         <>
-            { hit ? <piros/> : <fekete/> }
+            { hit ? <Piros/> : <Fekete/> }
         </>
     )
 }
-function piros()
+function Piros()
 {
     return <div className={styles.piros}></div>
 }
 
-function fekete()
+function Fekete()
 {
-    return <div className={styles.feke}></div>
+    return <div className={styles.fekete}></div>
 }
 
 function Flip2(){
     var hit = Math.random() < 0.5;
     if(hit){
-        return<piros/>
+        return <Piros/>
     }
     else{
-        return <fekete/>
+        return <Fekete/>
     }
 }
 
