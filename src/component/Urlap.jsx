@@ -33,6 +33,7 @@ function Urlap(){
                     <br />
                     <label htmlFor="aktiv">Aktiv</label>
                     <input type="checkbox" name="aktiv" id="aktiv" checked={user.aktiv} onChange={e => setUser({...user, aktiv: e.target.checked})}/>
+                    <textarea name="megj" id="megj" value={user.megj}>Megjegyzés: </textarea>
 
                 </fieldset>
             </form>
