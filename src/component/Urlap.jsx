@@ -36,7 +36,7 @@ function Urlap(){
 
                 </fieldset>
             </form>
-            <p>Helló {user.nev}({user.evf}) évfolyam, {user.aktiv ? "aktív" : "passzív"}</p>
+            <p>Helló {user.nev} ({user.evf}) évfolyam, {user.aktiv ? "aktív" : "passzív"}</p>
         </>
     )
 }
