@@ -1,5 +1,6 @@
 import './css/general.css'
-import Hello from './Hello.jsx'
+import './component/Flip.jsx'
+import Hello from './component/Hello.jsx'
 function App() {
   return (
     <>
