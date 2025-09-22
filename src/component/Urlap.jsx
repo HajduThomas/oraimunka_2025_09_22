@@ -1,7 +1,7 @@
 import { useState } from "react"
 function Urlap(){
     const [szoveg, setSzoveg] = useState('');
-    const [user, setUser] = useState({nev: '', evf: 13});
+    const [user, setUser] = useState({nev: '', evf: 13, aktiv: 1});
     const kuldes = (event) => {
         event.preventDefault();
     }
@@ -30,9 +30,13 @@ function Urlap(){
                         <option value="12">12</option>
                         <option value="13">13</option>
                     </select>
+                    <br />
+                    <label htmlFor="aktiv">Aktiv</label>
+                    <input type="checkbox" name="aktiv" id="aktiv" checked={user.aktiv} onChange={e => setUser({...user, aktiv: e.target.checked})}/>
+
                 </fieldset>
             </form>
-            <p>Helló {user.nev}({user.evf}) évfolyam</p>
+            <p>Helló {user.nev}({user.evf}) évfolyam, {user.aktiv ? "aktív" : "passzív"}</p>
         </>
     )
 }
