@@ -1,0 +1,13 @@
+.piros{
+    background-color: red;
+}
+
+.fekete{
+    background-color: black;
+}
+
+.piros, .fekete{
+    padding: 10px;
+    color: white;
+    margin: 10px;
+}
